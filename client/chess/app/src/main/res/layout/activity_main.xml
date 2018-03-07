@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.chess.MainActivity">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg2"
+        android:fillViewport="true"></View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tex"
+        android:text="五子棋"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"/>
+    <Button
+
+        android:text="双人对战"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:onClick="onClick"
+        android:background="@drawable/shape"
+        android:textColor="#FFFFFF"
+        android:id="@+id/button" />
+
+    <Button
+        android:text="人机对战"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/button"
+        android:layout_marginTop="60dp"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:onClick="onClick2"
+        android:background="@drawable/shape"
+        android:textColor="#FFFFFF"
+        android:id="@+id/button5" />
+
+    <Button
+        android:text="联网对战"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button5"
+        android:layout_marginTop="60dp"
+        android:onClick="onClick3"
+        android:id="@+id/button6"
+        android:background="@drawable/shape"
+        android:textColor="#FFFFFF"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        style="@style/Widget.AppCompat.Button" />
+
+    <Button
+        android:text="规则说明"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button6"
+        android:layout_marginTop="60dp"
+        android:onClick="onClick4"
+        android:id="@+id/button8"
+        android:background="@drawable/shape"
+        android:textColor="#FFFFFF"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        style="@style/Widget.AppCompat.Button" />
+
+</RelativeLayout>

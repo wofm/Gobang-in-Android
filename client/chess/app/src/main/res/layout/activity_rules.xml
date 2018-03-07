@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rules"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/rulebg2"
+    tools:context="com.example.chess.Rules">
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="30dp"
+        android:fontFamily="幼圆"
+        android:text="规则"
+        android:id="@+id/textt1"
+        />
+    <TextView
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textt1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize="20dp"
+        android:fontFamily="幼圆"
+        android:text="1.方格棋盘，下子须落在十字上。"
+        android:id="@+id/textt2"
+        />
+
+        <TextView
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textt2"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+        android:textSize="20dp"
+        android:fontFamily="幼圆"
+        android:text="2.黑先、白后,从天元(h8)开始相互顺序落子。"
+        android:id="@+id/textt3"
+        />
+
+        <TextView
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+        android:layout_below="@+id/textt3" android:layout_marginLeft="16dp"
+        android:textSize="20dp"
+        android:fontFamily="幼圆"
+        android:text="3.最先在棋盘横向、竖向、斜向形成连续的相同色五个棋子的一方为胜。"
+        android:id="@+id/textt4"
+        />
+
+</RelativeLayout>

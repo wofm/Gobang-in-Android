@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.example.chess.Game">
+    <com.example.chess.Game_view
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/te"
+        android:background="@drawable/bg"
+       />
+    <LinearLayout
+        android:layout_below="@+id/te"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+
+    >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="难度"
+            android:background="@drawable/shape"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:onClick="setAI"
+            android:id="@+id/button2" />
+
+        <Button
+            android:text="重开"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/button3"
+            android:background="@drawable/shape"
+            android:textColor="#FFFFFF"
+            android:onClick="restart"/>
+
+        <Button
+            android:text="悔棋"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onChange"
+            android:background="@drawable/shape"
+            android:textColor="#FFFFFF"
+            android:id="@+id/button4" />
+        <Button
+            android:text="寻敌"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onFind"
+            android:background="@drawable/shape"
+            android:textColor="#FFFFFF"
+            android:id="@+id/button5" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
